@@ -4,17 +4,13 @@
 <html>
 
 <head>
-<style>
-    h1{
-        text-align:center;}
-    h2 {
-        text-align: center;}
-    th {
-        border-style:outset;}
-    .center{margin-left: auto;
-    margin-right: auto;}
-    footer {text-align: center}
-    </style>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/gallery.theme.css">
+<link rel="stylesheet" href="css/gallery.min.css">
+    
+          
     <!-- Title with Famicon.  Contains company name and slogan -->
     <title>GumGone - We'll Scrape It!</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -22,21 +18,55 @@
     <body>
     <header>
         <!-- This is the header.  I wanted to have the company logo link back to the homepage.  I don't have the homepage quite yet, but the concept is there.  Otherwise i've added the logo, as well as the company name and slogan. -->
-        <p style="text-align: center;"><img src="logo.png" alt="logo" class="center"></p>
-        <h1>GumGone</h1><h2>"We'll Scrape It!"</h2>    </header>
+        <a href="https://drdeveloper.github.io/"><img src="logo.png" alt="logo" class="left" style="position: relative; top:30px;"></a><h1 style="display: inline">GumGone</h1>
+        <h2 style="display: inline"><i>- "We'll Scrape It!"</i></h2>    </header>
         
         <!-- This will be the menu buttons to navigate the site when I learn how to make them -->
-        <nav><table style="width:100&" class="center"><th>Mission Statement</th><th>Our Staff</th><th>Testimonials</th><th>Commission Info</th></table></nav>
+        <br><nav class="navbar">
+        <nav class="dropdown">
+                <button class="dropbtn">About Us &#x25BE;</button><div class="dropdown-content"><a href="">Our Staff</a>
+            <a href="">Mission Statement</a></div>
+            </nav>
+        <nav class="dropdown">
+                <button class="dropbtn">How Tos &#x25BE;</button><div class="dropdown-content"><a href="">Carpet</a>
+            <a href="">Clothes</a>
+            <a href="">Furniture</a></div>
+            </nav>
+<nav class="dropdown">
+                <button class="dropbtn">Our Work &#x25BE;</button><div class="dropdown-content"><a href="">Testimonials</a>
+    <a href="">Gallery</a>
+            <a href="">Services & Commission Info</a></div>
+            </nav>
+        </nav>
         
         <!-- The meat of the main page.  I would like to clean this up and maybe put in some images that change here or text over the image.  It's rough, but once I learn some more i'll clean this up. -->
-        <section><img src="usedgum.png" style="float: left"></section><article><h3>Who are we?</h3>
-        <p>We're a group of people with a vision and a dream:  To get the pesky gum off of every crevice its been stuck to.<br><br>Have you ever sat down on a park bench only to grab the railing and feel a sticky menace clinging to your fingers?  We have.
+        <section>
+            
+        </section>
+        <div id="container">
+            <div id="slider" >
+                <figure>
+                    <img src="Testgum1.png">
+                    <img src="Testgum2.png">
+                    <img src="Testgum3.png">
+                    <img src="Testgum4.png">
+                    <img src="Testgum1.png">
+                </figure>
+        </div></div><article style="border: 2px solid black;
+position: relative;
+left: 300px;
+bottom: 300px;
+box-sizing: border-box;
+width:92.2%;
+height:300px;">
+        <h3>Who are we?</h3>
+        We're a group of people with a vision and a dream:  To get the pesky gum off of every crevice its been stuck to.<br><br>Have you ever sat down on a park bench only to grab the railing and feel a sticky menace clinging to your fingers?  We have.
     <br>Have you ever been assigned a new desk in class only to find the underside is a graveyard to chewable treats?  <b>We have.</b>
             <br>Have you ever went inside your house after a long day of jogging only to stretch a pink splat from the bottom of your shoe to your carpet? <i><b>You bet we have.</b></i><br><br>
-        And if you're like us you want a future where you don't just want to avoid the gum, you want the Gum Gone.</p></article>
+        And if you're like us you want a future where you don't just want to avoid the gum, you want the Gum Gone.</article><br><br>
         
         <!-- Footer.  Legal information, privacy information, contact us.  All of the links are dead links, but I wanted to demonstrate another proof of concept. -->
-        <footer><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><a href="/">Legal</a> | <a href="/">Privacy</a> | <a href="/">Support</a><br>
+        <footer><a href="/">Legal</a> | <a href="/">Privacy</a> | <a href="/">Support</a><br>
         &copy;GumGone. All Right Reserved.
         </footer>
     
